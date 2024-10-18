@@ -10,6 +10,12 @@ body {
   
   
 }
+.shimushi{
+display: flex;
+flex-direction:column;
+max-height: 60px;
+width: auto;
+}
 .main{
      display: flex;
      heigt: 100%;
