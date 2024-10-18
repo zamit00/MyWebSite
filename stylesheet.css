@@ -69,7 +69,7 @@ option{font-size: 25px;}
         text-align: center;
         cursor: pointer; 
         font-size: 20px;
-        transition: width 2s , height 2s ,font-size 2s , transform 2s; 
+        transition: width 2s , height 2s ,font-size 2s;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         width: 120px;height: 70px; margin-right: 70px;}
      .btnrisk {
@@ -86,7 +86,7 @@ option{font-size: 25px;}
     
   .label-button:hover{width: 160px;
                       height: 100px;font-size: 25px;
-                      transform: rotate(180deg);
+                     
                      } 
 
   .btnrisk:hover {
