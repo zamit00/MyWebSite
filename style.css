@@ -7,8 +7,15 @@ body {
   color: #333;
   height: 100%;
   margin: 0px;
+}
+
+
   
-  
+ .list{
+    display: flex;
+    flex-direction:column;
+    max-height: 50px;
+    width: auto;
 }
 .shimushi{
 display: flex;
