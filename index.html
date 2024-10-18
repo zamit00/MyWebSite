@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripta.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formating.css">
     <title>חגי זך גמל והשתלמות</title>
 
 </head>
 <body dir="rtl">
     <div class="main">
+
     <header>
-        
+        <div class="koteretdaf">
             <h1>חגי זך - מומחה גמל והשתלמות</h1>
-        
-        <nav>
-            
+        </div> 
+        <nav class="tatkoteret">
             <a href="#about" >אודות</a>
-            <div class="shimushi" onclick="gotosherutim()" >שימושי
-                <div class="list">
-                   <a   id="sherutim" >סימולטור השקעה</a>
-                   <span>קופות גמל</span>
-                   <span>קרנות השתלמות</span>
-                   <span>חסכון לילד</span>
-                </div>   
-            </div>
-                
+
+            <div class="dropdown">
+                <button class="dropbtn">שימושי</button>
+                <div class="dropdown-content">
+                <a href="#">מחשבונים</a>
+                <a href="#">מידע מקצועי</a>
+                <a href="#">נתוני גמל והשתלמות</a>
+                </div>
+              </div>
+
+
+
+
+
+
+            
             <a href="#contact">צור קשר</a>
         </nav>
-    </header>
 
+    </header>
     <div class="container" id="container">
         <section id="about">
             <h2>אודותיי</h2>
