@@ -12,10 +12,11 @@ body {
 
   
  .list{
-    display: flex;
+    display: none;
     flex-direction:column;
     max-height: 50px;
     width: auto;
+             
 }
 .shimushi{
 display: flex;
