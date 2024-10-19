@@ -33,6 +33,7 @@ padding: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment:fixed;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   height:auto;
@@ -51,17 +52,22 @@ footer {
 #simulators{
   background-image: url('computers.jpg') !important ;
   background-size: contain ;
+  background-attachment: fixed;
+            
   
   
 }
 #mikzoyi{
   background-image: url('mikzoi.jpg') !important ;
   background-size: contain ;
+  background-attachment: fixed;
+  background-repeat: none;
 }
 
 #misoi{
   background-image: url('misim.png') !important ;
   background-size: contain ;
+  background-attachment: fixed;
 
 }
 
