@@ -22,6 +22,7 @@ header {
   color: white;
   padding: 20px 0;
   margin:0px 35px;
+  font-size: 35px;
 }
 .koteretdaf{text-align: center;}
 
@@ -43,7 +44,7 @@ a {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
   background-color: white;
