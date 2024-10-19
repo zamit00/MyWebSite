@@ -22,7 +22,7 @@ a {
 display: flex;
 justify-content: center;
 align-items: center;
- width: 60%;
+ width: 80%;
  margin: 20px 0px;
 padding: 20px;
 
@@ -69,7 +69,7 @@ footer {
 .koteretdaf{margin-bottom: 40px;color:aliceblue;}
 .main-content{display: flex;justify-content: space-around;}
 .contleft{
-  width: 20%;
+  width: 10%;
   
   margin:20px 0px 20px 35px;
   display: flex;
@@ -87,7 +87,7 @@ button{
   border: 1px solid black;
   margin: 20px 0px 0px 10px;
 }
-.contright{width: 30%;
+.contright{width: 20%;
  
   margin:20px 35px 20px 0px;
   background-image: linear-gradient(rgb(75, 125, 172) 0%, rgb(129, 153, 180) 50%, rgb(149, 170, 173) 100%) ;
