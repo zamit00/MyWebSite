@@ -1,76 +1,213 @@
-
-html, body {
-    height: 100%; 
-    margin: 0; 
-    
-    
-}
-
 body {
-    background-color: rgb(247, 247, 235);
-    
     font-family: Arial, sans-serif;
-    position: relative;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0px;
 }
 
-.imag-cont{
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full viewport height */
-    
-    background-image: url('backreka.png'); /* Set background image */
-    background-size: contain; /* Ensure the image scales with the container */
-    background-repeat: no-repeat; /* No repeating */
-    background-position: center; /* Center the image */
-    position: relative;
-    margin-top: 40px;
-}
-select, .lblselect{
-    border: none;
-    font-size: 15px;
-    color: rgb(17, 109, 30);
-    width: 150px;
-    padding-right: 5px;
-    background-color: rgb(252, 247, 228);;
-}
-
-.lblselect{margin-right: 4px;}
-
-.dropbtndiv{
-    position: relative;
-    right: 5%;
-    top: 0%;
-    z-index: 1;
-}
-
-.dropbtn{
-    width: 35px;
-    
-    height: 35px;
-    right: 35%;
-    top:10%;
-    cursor: pointer;
-    border: none;
-    position: fixed;
-    padding-bottom: 5px;
-    z-index: 2;
-    
-}
-hr{width: 15px;}
-.dropdown-item{
-    display: none;
-    position: absolute;
-    top:34px;
-    right: -0px;
-    width: 150px;
-    background-color: rgb(252, 247, 228);
-}
-
-.dropbtn:hover .dropdown-item{
+.container {
+    display: flex;
     flex-direction: column;
-     display: flex;
-     justify-content: first baseline;
-     z-index: 1;
-    }
+    height: 100vh;
+}
 
+.navbar {
+    display: flex; /* מסדר את הלוגו והטקסט באותו קו */
+    align-items: center; /* מרכז אנכית */
+    justify-content: space-between; /* מרכז אופקית */
+    background-color: rgb(6, 1, 1); /* צבע רקע לבן */
+    color: #000; /* צבע טקסט */
+    padding: 20px; /* רווח פנימי */
+    flex: 0 0 15%;
+    font-weight: bold; /* הדגשת הטקסט */
+    font-size: 250%; /* גודל טקסט גדול יותר */
+   padding-top: 15px;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+    top: -5px;
+    font-size: 250%; /* גודל גדול יותר ללוגו */
+    font-weight: bold; /* הדגשת הלוגו */
+}
+
+.logo-green {
+    color:rgb(255, 199, 23); /* ירוק כהה */
+    margin-left: -10px;
+}
+
+.logo-orange {
+    color:rgb(214, 214, 150) ; /* כתום */
+    margin-right: 4px;
+}
+.dotes{position: relative;
+    
+}
+.dots2{position: absolute;
+    color:rgb(255, 199, 23);
+    font-size: 100px;
+    left: 174px;
+    top: -125px;
+    animation: rotate 10s linear infinite; animation-delay: 15s;
+    
+}
+.dots1{position: absolute;
+    color:rgb(255, 199, 23);
+    font-size: 100px;
+    left: 187px;
+    top: -105px;
+    animation: rotate 10s linear infinite; animation-delay: 15s;
+
+}
+
+
+.nav-text {
+    position: absolute; /* מסדר את המילים באותו קו */
+    flex-wrap: wrap; /* מאפשר למילים לעבור לשורה הבאה אם יש צורך */
+    right: 50px; /* מרכז אופקית את הטקסט 
+    animation: move 10s linear infinite;*/
+}
+
+
+.nav-green {
+    color: rgb(255, 199, 23); /* ירוק כהה */
+}
+
+.nav-orange {
+    color:rgb(214, 214, 150); /* כתום */
+    margin-left:15px ;
+}
+
+.controls {
+    background-color: #000;
+    padding: 10px;
+    flex: 0 0 30%;
+    max-height: 130px;
+    display: flex;
+    justify-content: space-around; /* מפזר את הפקדים באופן שווה */
+    padding: 10px 10px;
+}
+.control {
+    display: inline-block;
+    flex: 1; /* כל פקד תופס אחוז שווה מהרוחב */
+    margin: 0 60px; /* רווח בין הפקדים */
+    background-color: #01060b; /* צבע רקע לפקדים */
+    color:rgb(255, 199, 23); /* צבע טקסט */
+    text-align: center; /* מרכז את הטקסט */
+    border-radius: 15px; /* פינות מעוגלות */
+    font-size: 200%; /* גודל טקסט */
+    width: 200px;
+    height: 100px;
+    align-content: center;
+    box-shadow: 10px 10px 5px 5px #303132;
+    animation: grow 2s ease-in-out forwards; /* Default animation */
+    
+}
+.main-content {
+    display: flex;
+    background-color: #000;;
+    justify-content: space-between;
+    padding: 10px;
+    flex: 0 0 60%;
+    margin-top: 0%;
+    max-height: 70%;
+}
+.image{
+    display: flex;
+    width:35%;
+    background-image:url('backreka.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0%;margin: 0%;
+}
+ .divR{
+    width: 65%;
+    height: 100%;
+    margin-top: 0px;
+}
+
+
+.footer {
+    background-color: rgb(6, 1, 1);
+    color: white;
+    padding: 0px;
+    flex: 0 0 5%;
+    margin-top: 1px;
+}
+
+
+
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+#rotating {
+    display: inline-block; /* Necessary for transform to work */
+    animation: rotate 10s linear infinite; animation-delay: 15s;
+    
+}
+p{
+    color: aliceblue;
+    font-size: 25px;
+    margin-right: 10px;
+    word-break: keep-all;
+}
+/*@keyframes move {
+    from {
+       transform:rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg); 
+    }
+    
+}*/
+
+
+
+/* Set different animation delays for each button 
+.control:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.control:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.control:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.control:nth-child(4) {
+    animation-delay: 6s;
+}
+.control {
+    animation: grow 2s ease-in-out forwards infinite; 
+}*/
+/*@keyframes move {
+    0% {
+        transform: translateX(100%); 
+    }
+    70% {
+        transform: translateX(80%); 
+    }
+    35% {
+        transform: scale(1.5); 
+    }
+    70% {
+        transform: scale(1.0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}*/
 
 
