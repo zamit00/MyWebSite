@@ -158,7 +158,7 @@ body {
 
 #rotating {
     display: inline-block; /* Necessary for transform to work */
-    animation: rotate 10s linear infinite; animation-delay: 15s;
+    animation: rotate 10s linear infinite; animation-delay: 10s;
     
 }
 p{
