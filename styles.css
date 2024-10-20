@@ -38,7 +38,9 @@ body {
 }
 
 .logo-orange {
-    color:rgb(214, 214, 150) ; /* כתום */
+   background: linear-gradient(to bottom left, rgb(255, 199, 23), rgb(214, 214, 150)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
     margin-right: 4px;
 }
 .dotes{position: relative;
@@ -75,7 +77,9 @@ body {
 }
 
 .nav-orange {
-    color:rgb(214, 214, 150); /* כתום */
+    background: linear-gradient(to bottom left, rgb(255, 199, 23), rgb(214, 214, 150)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
     margin-left:15px ;
 }
 
