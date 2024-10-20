@@ -9,27 +9,33 @@
     
 </head>
 <body dir="rtl">
+    <div class="imag-cont">
+        <div class="dropbtndiv">
+            <label class="dropbtn"><hr><hr><hr>
+        
+                <div class="dropdown-item">
+                    <select id="select1">
+                        <option value="0" disabled selected class="optdis">מידע מקצועי </option>
+                        <option onclick="select('select1')" value="1">קרן השתלמות</option>
+                        <option onclick="select('select1')" value="2">קופת גמל</option>
+                        <option onclick="select('select1')" value="3">קופת גמל להשקעה</option>
+                        <option onclick="select('select1')" value="4">קופת גמל חסכון לילד</option>
+                    </select>
+                    <label href="#" class="lblselect">נתוני קופות גמל</label>
+                    <select id="select2">
+                        <option value="0" disabled selected class="optdis">מחשבונים</option>
+                        <option onclick="select('select2')" value="1">מחשבון ריבית דריבית</option>
+                        <option onclick="select('select2')" value="2">מחשבון ריבית פיגורים</option>
+                        <option onclick="select('select2')" value="3">מחשבון הצמדה למדד</option>
+                    
+                    </select>
+                </div>
+            </label> 
+        </div>  
+    </div>
+        
     
         
-    <div class="dropbtn"><hr><hr><hr>
-        <div class="dropdown-item">
-                
-            <select id="select1">
-                <option value="1" disabled selected class="optdis">מידע מקצועי </option>
-                <option href="#">קרן השתלמות</option>
-                <option href="#">קופת גמל</option>
-                <option href="#">קופת גמל להשקעה</option>
-                <option href="#">קופת גמל חסכון לילד</option>
-            </select>
-            <label href="#" class="lblselect">נתוני קופות גמל</label>
-            <select id="select2">
-                <option value="1" disabled selected class="optdis">מחשבונים</option>
-                <option href="#">מחשבון ריבית דריבית</option>
-                <option href="#">מחשבון ריבית פיגורים</option>
-                <option href="#">מחשבון הצמדה למדד</option>
-                
-            </select>
-        </div>
-    </div>
+    
 </body>
 </html>
