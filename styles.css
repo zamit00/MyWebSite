@@ -91,7 +91,7 @@ body {
 .control {
     display: inline-block;
     flex: 1; /* כל פקד תופס אחוז שווה מהרוחב */
-    margin: 0 60px; /* רווח בין הפקדים */
+    margin: 0 20px; /* רווח בין הפקדים */
     background-color: #01060b; /* צבע רקע לפקדים */
     color:rgb(255, 199, 23); /* צבע טקסט */
     text-align: center; /* מרכז את הטקסט */
