@@ -49,7 +49,7 @@ body {
     font-size: 100px;
     left: 174px;
     top: -125px;
-    animation: rotate 10s linear infinite; animation-delay: 15s;
+    /*animation: rotate 10s linear infinite; animation-delay: 15s;*/
     
 }
 .dots1{position: absolute;
@@ -57,7 +57,7 @@ body {
     font-size: 100px;
     left: 187px;
     top: -105px;
-    animation: rotate 10s linear infinite; animation-delay: 15s;
+    /*animation: rotate 10s linear infinite; animation-delay: 15s;*/
 
 }
 
