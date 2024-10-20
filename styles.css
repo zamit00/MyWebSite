@@ -33,12 +33,14 @@ body {
 }
 
 .logo-green {
-    color:rgb(255, 199, 23); /* ירוק כהה */
+    background: linear-gradient(to bottom left, rgb(255, 204, 38), rgb(184, 184, 17)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
     margin-left: -10px;
 }
 
 .logo-orange {
-   background: linear-gradient(to bottom left, rgb(255, 199, 23), rgb(214, 214, 150)); 
+  background: linear-gradient(to bottom left, rgb(255, 199, 23), rgb(214, 214, 150)); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     margin-right: 4px;
@@ -67,8 +69,12 @@ body {
 .nav-text {
     position: absolute; /* מסדר את המילים באותו קו */
     flex-wrap: wrap; /* מאפשר למילים לעבור לשורה הבאה אם יש צורך */
-    right: 50px; /* מרכז אופקית את הטקסט 
+    right: 50px; /* מרכז אופקית את הטקסט
+    
     animation: move 10s linear infinite;*/
+    background: linear-gradient(to bottom left, rgb(255, 199, 23) , rgb(214, 214, 150));
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
 }
 
 
@@ -77,9 +83,7 @@ body {
 }
 
 .nav-orange {
-    background: linear-gradient(to bottom left, rgb(255, 199, 23), rgb(214, 214, 150)); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    
     margin-left:15px ;
 }
 
