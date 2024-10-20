@@ -12,8 +12,9 @@ body {
     font-family: Arial, sans-serif;
     position: relative;
 }
+
 .imag-cont{
-    width: 100%; /* Full width */
+    width: 100vw; /* Full width */
     height: 100vh; /* Full viewport height */
     
     background-image: url('backreka.png'); /* Set background image */
@@ -21,13 +22,15 @@ body {
     background-repeat: no-repeat; /* No repeating */
     background-position: center; /* Center the image */
     position: relative;
+    margin-top: 40px;
 }
 select, .lblselect{
     border: none;
-    font-size: 20px;
-    width: 200px;
+    font-size: 15px;
+    color: rgb(17, 109, 30);
+    width: 150px;
     padding-right: 5px;
-    background-color: rgb(247, 247, 235);;
+    background-color: rgb(252, 247, 228);;
 }
 
 .lblselect{margin-right: 4px;}
@@ -37,28 +40,29 @@ select, .lblselect{
     right: 5%;
     top: 0%;
     z-index: 1;
-    
 }
 
 .dropbtn{
-    width: 20px;
-    max-width: 30%;
+    width: 35px;
+    
     height: 35px;
-    right: 15px;
-    top:10px;
+    right: 35%;
+    top:10%;
     cursor: pointer;
     border: none;
     position: fixed;
     padding-bottom: 5px;
     z-index: 2;
+    
 }
+hr{width: 15px;}
 .dropdown-item{
     display: none;
     position: absolute;
     top:34px;
-    right: -10px;
-    width: 200px;
-    background-color: rgb(247, 247, 235);
+    right: -0px;
+    width: 150px;
+    background-color: rgb(252, 247, 228);
 }
 
 .dropbtn:hover .dropdown-item{
@@ -67,7 +71,6 @@ select, .lblselect{
      justify-content: first baseline;
      z-index: 1;
     }
-select option:hover option{background-color: aliceblue;}
 
 
 
