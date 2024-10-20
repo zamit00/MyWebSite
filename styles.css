@@ -97,7 +97,7 @@ body {
     text-align: center; /* מרכז את הטקסט */
     border-radius: 15px; /* פינות מעוגלות */
     font-size: 200%; /* גודל טקסט */
-    width: 200px;
+    width: 160px;
     height: 100px;
     align-content: center;
     box-shadow: 10px 10px 5px 5px #303132;
@@ -119,7 +119,9 @@ body {
     background-image:url('backreka.png');
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 0%;margin: 0%;
+    padding:  0%;margin: 0%;
+    margin-top: 90px;
+
 }
  .divR{
     width: 65%;
@@ -161,53 +163,5 @@ p{
     margin-right: 10px;
     word-break: keep-all;
 }
-/*@keyframes move {
-    from {
-       transform:rotateX(0deg);
-    }
-    to {
-        transform: rotateX(360deg); 
-    }
-    
-}*/
 
-
-
-/* Set different animation delays for each button 
-.control:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.control:nth-child(2) {
-    animation-delay: 2s;
-}
-
-.control:nth-child(3) {
-    animation-delay: 4s;
-}
-
-.control:nth-child(4) {
-    animation-delay: 6s;
-}
-.control {
-    animation: grow 2s ease-in-out forwards infinite; 
-}*/
-/*@keyframes move {
-    0% {
-        transform: translateX(100%); 
-    }
-    70% {
-        transform: translateX(80%); 
-    }
-    35% {
-        transform: scale(1.5); 
-    }
-    70% {
-        transform: scale(1.0); 
-    }
-    100% {
-        transform: translateX(-100%); 
-    }
-}*/
-
-
+ 
