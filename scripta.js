@@ -1,5 +1,4 @@
-function gotosherutim(){
-    window.location.href = 'simulator.html';
-   
-}
 
+function select(select) {
+   console.log('OK');
+}
