@@ -338,7 +338,7 @@ function cleartesua() {
 
 
         window.addEventListener('message', (event) => {
-          //  if (event.origin !== 'https://zamit00.github.io/RibitDeRibit/') {
+          //  if (event.origin !== 'https://zamit00.github.io/simulator/') {
            //     return;
           //  }
             alert ( event.data.text);
