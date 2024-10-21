@@ -142,7 +142,7 @@ span{color: green;}
     justify-content:baseline;
     align-items: baseline;
     width: 100%;
-    height: 60%;
+    height: 50%;
     border: 1px solid rgb(255, 199, 23);
     font-size: 25px;
     color: rgb(255, 199, 23);
@@ -158,7 +158,7 @@ span{color: green;}
     background-color: #000;;
     justify-content: space-between;
     width: 100%;
-    height: 40%;
+    height: 50%;
     border: 1px solid rgb(255, 199, 23);
     color:rgb(255, 199, 23); 
     font-size: 15px;
@@ -183,7 +183,7 @@ span{color: green;}
 .hishquiz-container{height: 98%;
     display: none;
 }
-.sheelotteshu{
+.sheelottsuva{
     display: flex;
     flex-direction: column;
     align-items: right;
