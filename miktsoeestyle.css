@@ -149,6 +149,7 @@ span{color: green;}
     border: 1px solid gold;
     padding:3px 5px 8px 5px ;
     word-wrap: break-word;
+    overflow: auto;
 }
 .tshu{
     display: flex;
@@ -162,7 +163,7 @@ span{color: green;}
     color:rgb(255, 199, 23); 
     font-size: 15px;
     word-wrap: break-word;
-
+    overflow: auto;
 }
 .answer-link {
     color: #13c852;
