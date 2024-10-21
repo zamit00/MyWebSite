@@ -66,3 +66,5 @@ justify-content:right;}
     background-size: 60%;
     background-position-y:bottom ;
 }
+.gotomigdal{width:200px; height: 50px; font-size: 25px; color: gold;background-color: black;}
+.backhome{display: flex;justify-content: center;}
