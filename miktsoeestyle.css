@@ -141,13 +141,14 @@ span{color: green;}
     background-color: #000;;
     justify-content:baseline;
     align-items: baseline;
-    width: 40%;
-    height: 95%;
+    width: 100%;
+    height: 70%;
     border: 1px solid rgb(255, 199, 23);
     font-size: 22px;
     color: rgb(255, 199, 23);
     border: 1px solid gold;
     padding:3px 5px 8px 5px ;
+    word-wrap: break-word;
 }
 .tshu{
     display: flex;
@@ -155,8 +156,8 @@ span{color: green;}
     align-items: right;
     background-color: #000;;
     justify-content: space-between;
-    width: 55%;
-    height: 97%;
+    width: 100%;
+    height: 30%;
     border: 1px solid rgb(255, 199, 23);
     color:rgb(255, 199, 23); 
     font-size: 15px;
@@ -180,4 +181,18 @@ span{color: green;}
 
 .hishquiz-container{height: 98%;
     display: none;
+}
+.sheelotteshu{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    background-color: #000;;
+    
+    width: 85%;
+    height: 97%;
+    border: 1px solid rgb(255, 199, 23);
+    color:rgb(255, 199, 23); 
+    font-size: 15px;
+    word-wrap: break-word;
+    
 }
