@@ -18,6 +18,7 @@ function navmiksoee(nav) {
     }
     else{
         document.getElementById('hishquiz-container').style.display = "none";
+    document.getElementById('tshuvak').innerText='';
     }
      
 }
