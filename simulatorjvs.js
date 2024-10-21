@@ -1,4 +1,4 @@
-window.onload = function() {
+tuwindow.onload = function() {
 
    
     sumsum();}
@@ -207,7 +207,7 @@ function gotomaslul() {
    //const message = document.getElementById("sikonnimdad").innerText;
    //if (message !== ''){
   // targetWindow.postMessage(message, 'https://zamit00.github.io/HZgemel/');}
-   window.location.href = 'https://zamit00.github.io/HZgemel/';
+   window.location.href = 'netunim.html';
    
 }
 
