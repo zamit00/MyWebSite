@@ -1,4 +1,4 @@
-hurlyfunction tshuva(k){
+function tshuva(k){
     
     const text = document.getElementById(k).innerText;
     const pElement = document.getElementById('tshuvak');
@@ -23,10 +23,6 @@ function navmiksoee(nav) {
      
 }
 
-function gotohome(){
-    window.location.href = 'https://zamit00.github.io/MyWebSite/';
-   
-}
 
 
 
