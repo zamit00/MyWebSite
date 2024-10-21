@@ -13,7 +13,7 @@
     font-size: 20px;
    
     background-color:  #000;
-    color: gold;
+    color: rgb(255, 199, 23);
 
 
 }
@@ -31,14 +31,14 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
-    color: gold;
+    color: rgb(255, 199, 23);
     border: 1px solid gold;
    
 }
 
 h1 {
     text-align: center;
-    color: gold;
+    color: rgb(255, 199, 23);
 }
 
 .question {
