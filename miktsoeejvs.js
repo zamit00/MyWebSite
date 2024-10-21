@@ -4,7 +4,7 @@ function tshuva(k){
     const pElement = document.getElementById('tshuvak');
     pElement.innerText=text;
 }
-function gotohome(){
+function backhome(){
     window.location.href = 'https://zamit00.github.io/MyWebSite/';
    
 }
