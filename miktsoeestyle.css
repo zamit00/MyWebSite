@@ -147,7 +147,7 @@ span{color: green;}
     font-size: 25px;
     color: rgb(255, 199, 23);
     border: 1px solid gold;
-    padding:3px 3px 3px 3px ;
+    padding:7px ;
     
     overflow: auto;
 }
@@ -164,6 +164,7 @@ span{color: green;}
     font-size: 15px;
     word-wrap: break-word;
     overflow: auto;
+    padding:7px;
 }
 .answer-link {
     color: #13c852;
