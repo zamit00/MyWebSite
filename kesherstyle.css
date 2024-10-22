@@ -29,6 +29,7 @@ h1 {
 .contact-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -42,6 +43,7 @@ input, textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    max-width:500px;
 }
 
 button {
@@ -51,6 +53,10 @@ button {
     border: 1px solid gold;
     border-radius: 5px;
     cursor: pointer;
+    max-width:500px;
+
+
+
 
 }
 
@@ -61,6 +67,7 @@ button:hover {
 footer {
     text-align: center;
     margin-top: 20px;
+    max-width:500px
 }
 .gotomigdal{width:200px; height: 50px; font-size: 25px; color: gold;background-color: black;}
 .backhome{display: flex;justify-content: center;}
