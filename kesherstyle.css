@@ -40,6 +40,7 @@ h1 {
 label {
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 1em;
 }
 
 input, textarea {
@@ -83,4 +84,5 @@ footer {
     height: 60%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
