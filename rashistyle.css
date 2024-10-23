@@ -1,35 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0px;
-    color:rgb(255, 199, 23);
-}
-
-.container {
+  
+    margin: 0; /* להסיר ריפוד מהברירת מחדל */
+    font-family: Arial, sans-serif; /* סגנון פונט */
+    direction: rtl; /* תמיכה בעברית */
+    padding: 0;
+    background-color: rgb(6, 1, 1);
+    color:  rgb(255, 199, 23);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    color:  rgb(255, 199, 23);
+    width:150px;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45%;
+    width: 12%;
+    transform: translateX(100%); /* מתחיל מחוץ למסך */
+    transition: transform 0.3s ease;
+    margin-top: 60px;
+    background-color: rgb(6, 1, 1);
+    box-shadow: 5px 5px 10px rgb(155, 152, 152);
+    color:  rgb(255, 199, 23);
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .menu ul li {
+    padding: 20px;
+  }
+  
+  .menu ul li a {
+    color:  rgb(255, 199, 23);
+    text-decoration: none;
+  }
+  
+  .menu.active {
+    transform: translateX(0); /* נכנס למסך */
+  }
+  
+  /* אייקון דף הבית */
+  .home-icon {
+    
+    
+    font-size: 30px;
+    width: 40px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    background-image: url('gohome.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .home-icon i {
+    font-size: 30px;
+  }
+  
+  /* אפשר לשנות את הצבע של האייקון במעבר עם העכבר */
+  .home-icon:hover {
+    color: #007BFF;
+  }
+  .nav-text {
+    position: fixed; /* מסדר את המילים באותו קו */
+    flex-wrap: wrap; /* מאפשר למילים לעבור לשורה הבאה אם יש צורך */
+    right: 150px; 
+    top:25px;
+    font-weight: bold;
+    font-size: 35px;
+    background: linear-gradient(to bottom left, rgb(255, 199, 23) , rgb(214, 214, 150));
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
+
+}
+.nav-green {
+    color: rgb(255, 199, 23); /* ירוק כהה */
 }
 
-.navbar {
-    display: flex; /* מסדר את הלוגו והטקסט באותו קו */
-    align-items: center; /* מרכז אנכית */
-    justify-content: space-between; /* מרכז אופקית */
-    background-color: rgb(6, 1, 1); /* צבע רקע לבן */
-    color: #000; /* צבע טקסט */
-    padding: 20px; /* רווח פנימי */
-    flex: 0 0 15%;
-    font-weight: bold; /* הדגשת הטקסט */
-    font-size: 250%; /* גודל טקסט גדול יותר */
-   padding-top: 15px;
+.nav-orange {
+    margin-left:15px ;
 }
-
 .logo {
     position: absolute;
     left: 30px;
     top: -5px;
-    font-size: 250%; /* גודל גדול יותר ללוגו */
+    font-size: 400%; /* גודל גדול יותר ללוגו */
     font-weight: bold; /* הדגשת הלוגו */
 }
 
@@ -46,112 +112,6 @@ body {
     -webkit-text-fill-color: transparent; 
     margin-right: 4px;
 }
-.dotes{position: relative;
-    
-}
-.dots2{position: absolute;
-    color:rgb(255, 199, 23);
-    font-size: 100px;
-    left: 174px;
-    top: -125px;
-    /*animation: rotate 10s linear infinite; animation-delay: 15s;*/
-    
-}
-.dots1{position: absolute;
-    color:rgb(255, 199, 23);
-    font-size: 100px;
-    left: 187px;
-    top: -105px;
-    /*animation: rotate 10s linear infinite; animation-delay: 15s;*/
-
-}
-
-
-.nav-text {
-    position: absolute; /* מסדר את המילים באותו קו */
-    flex-wrap: wrap; /* מאפשר למילים לעבור לשורה הבאה אם יש צורך */
-    right: 50px; /* מרכז אופקית את הטקסט
-    
-    animation: move 10s linear infinite;*/
-    background: linear-gradient(to bottom left, rgb(255, 199, 23) , rgb(214, 214, 150));
-    -webkit-background-clip: text; /* Clip background to text */
-    -webkit-text-fill-color: transparent; /* Make the text fill transparent */
-}
-
-
-.nav-green {
-    color: rgb(255, 199, 23); /* ירוק כהה */
-}
-
-.nav-orange {
-    
-    margin-left:15px ;
-}
-
-.controls {
-    background-color: #000;
-    padding: 10px;
-    flex: 0 0 30%;
-    max-height: 130px;
-    display: flex;
-    justify-content: right; /* מפזר את הפקדים באופן שווה */
-    padding: 10px 10px;
-}
-.control {
-    display: inline-block;
-    flex: 1; /* כל פקד תופס אחוז שווה מהרוחב */
-    margin: 0 20px; /* רווח בין הפקדים */
-    background-color: #01060b; /* צבע רקע לפקדים */
-    color:rgb(255, 199, 23); /* צבע טקסט */
-    text-align: center; /* מרכז את הטקסט */
-    border-radius: 15px; /* פינות מעוגלות */
-    font-size: 200%; /* גודל טקסט */
-    width: 160px;
-    height: 100px;
-    align-content: center;
-    box-shadow: 10px 10px 5px 5px #303132;
-    animation: grow 2s ease-in-out forwards; /* Default animation */
-    text-decoration: none;
-}
-.main-content {
-    display: flex;
-    background-color: #000;;
-    justify-content: space-between;
-    padding: 10px;
-    flex: 0 0 60%;
-    margin-top: 0%;
-    max-height: 70%;
-}
-.image{
-    display: flex;
-    width:35%;
-    background-image:url('backreka.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding:  0%;margin: 0%;
-    margin-top: 90px;
-
-}
- .divR{
-    width: 65%;
-    height: 100%;
-    margin-top: 0px;
-}
-
-
-.footer {
-    background-color: rgb(6, 1, 1);
-    color: white;
-    padding: 0px;
-    flex: 0 0 5%;
-    margin-top: 1px;
-}
-
-
-
-
-
-
 @keyframes rotate {
     from {
         transform: rotateY(0deg);
@@ -166,11 +126,41 @@ body {
     animation: rotate 10s linear infinite; animation-delay: 10s;
     
 }
-p{
-    color: aliceblue;
-    font-size: 25px;
-    margin-right: 10px;
-    word-break: keep-all;
+
+.navbar {
+  position: fixed; /* קובע שה-navbar יישאר קבוע למעלה */
+  top: 0; /* מיקום מלמעלה */
+  left: 0; /* מיקום משמאל */
+  right: 0; /* מיקום מימין */
+  background-color: rgb(6, 1, 1);
+  padding: 20px; /* ריפוד סביב ה-navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* צל קטן מתחת ל-navbar */
+  z-index: 1000;
+  font-weight: bold; 
 }
 
- 
+
+.main-content {
+  display: flex; /* הופך את התוכן לתצוגת פלקס */
+  margin-top: 60px; /* מרווח מעל התוכן */
+  height: calc(100vh - 60px); /* גובה בהתאם לחלון */
+  background-color: #000; /* צבע רקע */
+  color: rgb(255, 199, 23); /* צבע טקסט */
+  font-size: 20px; /* גודל טקסט */
+  
+}
+
+.divR {
+  width: 65%; /* תופס 65% מהגובה */
+  overflow-y: auto; /* מאפשר גלילה */
+  padding: 20px; /* ריפוד פנימי */
+}
+
+.image {
+  width: 35%; /* תופס 35% מהגובה */
+  background-image: url('backreka.png'); /* תמונת הרקע */
+  background-size: cover; /* מכסה את כל המיכל */
+  background-repeat: no-repeat; /* לא לחזור על התמונה */
+  height: 100%; /* גובה מלא */
+  overflow-y: hidden;
+}
